@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 //  Port festlegen
-const PORT = 3000
+const PORT = procress.env.PORT || 3000
 
 // statische Dateien servieren
 app.use(express.static('public'))
